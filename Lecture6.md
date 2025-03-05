@@ -1,0 +1,1 @@
+![[プログラム/Excel/attachments/Clipboard - 2025-03-05 03.31.12.png]]

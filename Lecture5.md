@@ -6,18 +6,18 @@
 
 ```
 Sub test()
-	Dim taskDict As Object '辞書の変数を宣言 taskDictは何でもいい
-    Set taskDict = CreateObject("Scripting.Dictionary") '辞書本体の作成
-    
-    taskDict.Add "A", 100 '辞書にA -> 100 を追加
-    taskDict.Add "B", 200 '辞書にB -> 200　を追加
-    
-    MsgBox taskDict("A") '辞書のAを表示 (つまり100が表示)
-    
-    For Each Key In taskDict.Keys 'For文で辞書の中身全部を表示
-    MsgBox "key:" + Key + ", Value:" + CStr(taskDict(Key))'CStrは数字を文字列にする
-    Next Key
-    
+Dim taskDict As Object '辞書の変数を宣言 taskDictは何でもいい
+Set taskDict = CreateObject("Scripting.Dictionary") '辞書本体の作成
+
+taskDict.Add "A", 100 '辞書にA -> 100 を追加
+taskDict.Add "B", 200 '辞書にB -> 200　を追加
+
+MsgBox taskDict("A") '辞書のAを表示 (つまり100が表示)
+
+For Each Key In taskDict.Keys 'For文で辞書の中身全部を表示
+MsgBox "key:" + Key + ", Value:" + CStr(taskDict(Key))'CStrは数字を文字列にする
+Next Key
+
 End Sub
 
 ```
@@ -40,6 +40,7 @@ taskDict("A") = 300 '
 Sub test()
     Dim ws As Worksheet
     Set ws = ThisWorkbook.Sheets("Sheet1")
+    '辞書の作成
     Set taskDict = CreateObject("Scripting.Dictionary")
     Dim dog As Long
     Dim key1 As String
@@ -65,3 +66,14 @@ End Sub
 
 
 ```
+
+# Practice
+以下の表から.上でやったように各動物の体重を求めよ．
+
+| 名前     | 体重/Kg |
+| ------ | ----- |
+| dog    | 3     |
+| dog    | 4     |
+| cat    | 2     |
+| rabbit | 1     |
+| rabbit | 1     |

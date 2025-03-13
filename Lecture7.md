@@ -1,7 +1,6 @@
-### これまでの復習
-
 
 #### 経過時間を求めて右側に入れる
+![](attachments/Pasted%20image%2020250313204202.png)
 ```
 Sub test()
     Dim ws As Worksheet
@@ -11,3 +10,4 @@ Sub test()
     Next i
 End Sub
 ```
+![](attachments/Pasted%20image%2020250313204236.png)

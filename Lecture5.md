@@ -33,7 +33,7 @@ taskDict("A") = 300 '
 
 ### 同じ名前のデータの合計を求める
 (解説は後でする)
-
+エクセルの一部(Sheet1)
 ![](attachments/Clipboard%20-%202025-03-05%2003.31.12%201.png)
 
 ```
@@ -42,7 +42,6 @@ Sub test()
     Set ws = ThisWorkbook.Sheets("Sheet1")
     '辞書の作成
     Set taskDict = CreateObject("Scripting.Dictionary")
-    Dim dog As Long
     Dim key1 As String
     Dim val As Long
     
@@ -53,13 +52,13 @@ Sub test()
         If taskDict.Exists(key1) Then
             taskDict(key1) = taskDict(key1) + val
         Else
-            taskDict.Add key1, val
+            taskDict.Add key1, val '
         End If
     Next i
       
-    For Each key In taskDict.Keys
-    MsgBox "key:" + key + ", Value:" + CStr(taskDict(key))
-    Next key
+    For Each heyano_namae In taskDict.Keys 'taskDict.Keys = {"cat","dog"}
+    MsgBox "key:" + heyano_namae + ", Value:" + CStr(taskDict(heyano_namae))
+    Next heyano_namae
     
     
 End Sub

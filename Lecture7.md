@@ -11,3 +11,7 @@ Sub test()
 End Sub
 ```
 ![](attachments/Pasted%20image%2020250313204236.png)
+
+
+
+### フォーマットの話を少しした

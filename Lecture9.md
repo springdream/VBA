@@ -16,7 +16,7 @@ Sub objtest()
 	set rng =  ws.Cells(2,"B") 'Rangeもオブジェクト
 End Sub
 ```
-
+### A列最後尾の行の２つ下に日付を追加し，赤く塗る
 ```
 Sub add_date3()
     Dim ws As Worksheet
@@ -34,23 +34,8 @@ Sub add_date3()
 
 End Sub
 ```
-```
-Sub add_date3()
-    Dim ws As Worksheet
-    Set ws = ThisWorkbook.Sheets("Sheet1") 'オブジェクト'
-    
-    Dim lastRow As Long
-    Dim rng As Range
-    lastRow = ws.Rows.count 'Longはオブジェクトじゃなくて，整数型
-    Set rng = ws.Cells(lastRow, "A").End(xlUp)
-    lastRow = rng.Row
-    ws.Cells(lastRow + 2, "A").Value = Now
-    ws.Cells(lastRow + 2, "A").Interior.Color = RGB(255, 0, 0)
 
-End Sub
-
-```
-#### A列最後尾の行の２つ下に日付を追加し，赤く塗る
+### cell.end.rowを２行に分割
 ```
 Sub add_date3()
     Dim ws As Worksheet

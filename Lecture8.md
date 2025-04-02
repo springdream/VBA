@@ -25,4 +25,6 @@ Sub color()
 	Dim ws As Worksheet
     Set ws = ThisWorkbook.Sheets("Sheet1")
     ws.Cells(1,"A").Interior.Color = RGB(255,255,0)
+End Sub
 ```
+

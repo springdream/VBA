@@ -4,7 +4,8 @@
 この表から
 
 ### 経過時間を求める
-```Sub keika_jikan()
+```
+Sub keika_jikan()
     Dim ws As Worksheet
     Set ws = ThisWorkbook.Sheets("Sheet1")
     Dim startRow As Long

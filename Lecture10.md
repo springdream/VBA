@@ -14,7 +14,7 @@ Sub keika_jikan()
     lastRow = 17
     For i = startRow To lastRow - 1
         ws.Cells(i, "E").Value = ws.Cells(i + 1, "B").Value - ws.Cells(i, "B").Value
-        ws.Cells.NumberFormat = "h:mm"
+        ws.Cells(i,"E").NumberFormat = "h:mm"
     Next i
         
 End Sub
@@ -28,7 +28,7 @@ Sub sum_time()
     Set ws = ThisWorkbook.Sheets("Sheet1")
     Set taskDict = CreateObject("Scripting.Dictionary")
     Dim key As String
-    Dim val As Long
+    Dim val As Double
     
     For i = 1 To 16
         key = ws.Cells(i, "D")

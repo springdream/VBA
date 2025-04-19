@@ -73,7 +73,7 @@ Sub Insert_sum_Time()
     row_number = 1
     For Each cur_key In taskDict.Keys
         ws.Cells(row_number, "G").Value = cur_key
-        ws.Cells(row_number, "H").Value = CStr(taskDict(cur_key))
+        ws.Cells(row_number, "H").Value = taskDict(cur_key)
         ws.Cells(row_number, "H").NumberFormat = "h:mm"
         row_number = row_number + 1
     Next cur_key

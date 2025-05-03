@@ -64,7 +64,7 @@ Sub Insert_sum_Time3()
         key = ws.Cells(i, "D")
         val = ws.Cells(i, "E")
         
-        If taskDict.Exists(key) Then
+        If taskDict.Exists(key) Then '最初は辞書にkeyが入ってない
             taskDict(key) = taskDict(key) + val
         Else
             taskDict.Add key, val

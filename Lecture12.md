@@ -3,9 +3,9 @@
 
 ![|400x300](attachments/Clipboard%20-%202025-03-05%2003.24.53.png)
 
-![](attachments/Pasted%20image%2020250503175707.png)
+![](attachments/Pasted%20image%2020250504024706.png)
 
-
+辞書の名前が会社名，辞書のカギが社員の名前，辞書の値が給料のイメージ
 # Selection
  エクセルの選択範囲に関することができる
  下の図のような選択範囲だとすると

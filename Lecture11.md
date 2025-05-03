@@ -79,6 +79,7 @@ Sub Insert_sum_Time3()
         ws.Cells(row_number, "H").NumberFormat = "hh:mm"
         row_number = row_number + 1
     Next cur_key
+End Sub
 
 Sub cntl3()
     keika_jikan3

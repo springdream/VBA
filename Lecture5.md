@@ -12,6 +12,7 @@ Set taskDict = CreateObject("Scripting.Dictionary") '辞書本体の作成
 taskDict.Add "A", 100 '辞書にA -> 100 を追加
 taskDict.Add "B", 200 '辞書にB -> 200　を追加
 
+
 MsgBox taskDict("A") '辞書のAを表示 (つまり100が表示)
 
 For Each Key In taskDict.Keys 'For文で辞書の中身全部を表示
